@@ -163,7 +163,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/" className="inline-flex items-center gap-2">
             {/* <Image src="/verifiedcrm-mark.svg" alt="Verified CRM" width={36} height={36} priority /> */}
-            <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={250} height={44} priority className="relative top-[2px] border " />
+            <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={250} height={44} priority className="relative  " />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-1">
@@ -223,7 +223,7 @@ export default function Navbar() {
                       {/* logo */}
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={200} height={44} priority className="relative top-[2px] border " />
+                          <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={200} height={44} priority className="relative top-[2px] " />
 
                         </div>
                         <button onClick={() => setMobileOpen(false)} className="px-2 py-1 hover:bg-muted/50 rounded-md" style={{ color: '#052A41' }}>
