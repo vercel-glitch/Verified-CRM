@@ -64,8 +64,8 @@ const navbarConfig = [
 ];
 
 const authLinks = [
-  { label: "Login", href: "/auth", variant: "outline" },
-  { label: "Sign Up", href: "/auth/signup", variant: "primary" },
+  { label: "Login", href: "https://priority.verifiedcrm.com/login", variant: "outline" },
+  { label: "Sign Up", href: "https://priority.verifiedcrm.com", variant: "primary" },
 ];
 
 function MenuItem({ href, label, onClick, icon }) {
