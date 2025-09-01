@@ -79,17 +79,17 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <LayoutIcon className="h-5 w-5 text-gold-300" />,
+              icon: <LayoutIcon className="h-5 w-5 text-gold-500" />,
               title: "Customizable widgets",
               description: "Arrange cards, resize panels, and pin what matters most to you.",
             },
             {
-              icon: <RefreshCw className="h-5 w-5 text-gold-300" />,
+              icon: <RefreshCw className="h-5 w-5 text-gold-500" />,
               title: "Real-time data updates",
               description: "Live KPIs from leads, deals, and sales so you never miss a beat.",
             },
             {
-              icon: <BarChart3 className="h-5 w-5 text-gold-300" />,
+              icon: <BarChart3 className="h-5 w-5 text-gold-500" />,
               title: "Overview of deals & metrics",
               description: "Track pipeline health and sales velocity at a glance.",
             },
@@ -102,17 +102,17 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <ListChecks className="h-5 w-5 text-gold-300" />,
+              icon: <ListChecks className="h-5 w-5 text-gold-500" />,
               title: "Lead status tracking",
               description: "Monitor statuses like New, In Progress, and Closed for clarity.",
             },
             {
-              icon: <Workflow className="h-5 w-5 text-gold-300" />,
+              icon: <Workflow className="h-5 w-5 text-gold-500" />,
               title: "Customizable deal stages",
               description: "Define your pipeline and adapt stages to your sales strategy.",
             },
             {
-              icon: <Bell className="h-5 w-5 text-gold-300" />,
+              icon: <Bell className="h-5 w-5 text-gold-500" />,
               title: "Automated reminders",
               description: "Never miss follow-ups with alerts and scheduled nudges.",
             },
@@ -125,22 +125,22 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <Package className="h-5 w-5 text-gold-300" />,
+              icon: <Package className="h-5 w-5 text-gold-500" />,
               title: "Real-time product tracking",
               description: "Live stock levels and reporting across your catalog.",
             },
             {
-              icon: <AlertTriangle className="h-5 w-5 text-gold-300" />,
+              icon: <AlertTriangle className="h-5 w-5 text-gold-500" />,
               title: "Automated stock alerts",
               description: "Get notified when items drop below thresholds.",
             },
             {
-              icon: <DollarSign className="h-5 w-5 text-gold-300" />,
+              icon: <DollarSign className="h-5 w-5 text-gold-500" />,
               title: "Vendor pricing management",
               description: "Track vendor quotes and pricing agreements.",
             },
             {
-              icon: <Users className="h-5 w-5 text-gold-300" />,
+              icon: <Users className="h-5 w-5 text-gold-500" />,
               title: "Vendor relationships",
               description: "Centralize contacts, activity, and performance.",
             },
@@ -153,17 +153,17 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <BarChart3 className="h-5 w-5 text-gold-300" />,
+              icon: <BarChart3 className="h-5 w-5 text-gold-500" />,
               title: "Sales performance reports",
               description: "Understand revenue trends and team performance.",
             },
             {
-              icon: <Funnel className="h-5 w-5 text-gold-300" />,
+              icon: <Funnel className="h-5 w-5 text-gold-500" />,
               title: "Lead conversion reports",
               description: "Spot bottlenecks and optimize conversion rates.",
             },
             {
-              icon: <Percent className="h-5 w-5 text-gold-300" />,
+              icon: <Percent className="h-5 w-5 text-gold-500" />,
               title: "Profit margin tracking",
               description: "Monitor margins on precious metals and offerings.",
             },
@@ -176,17 +176,17 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <PhoneCall className="h-5 w-5 text-gold-300" />,
+              icon: <PhoneCall className="h-5 w-5 text-gold-500" />,
               title: "Inbound & outbound calls",
               description: "Manage calls and route to the right teams.",
             },
             {
-              icon: <Activity className="h-5 w-5 text-gold-300" />,
+              icon: <Activity className="h-5 w-5 text-gold-500" />,
               title: "Call tracking & performance",
               description: "Track volume, answer rate, and outcomes.",
             },
             {
-              icon: <Megaphone className="h-5 w-5 text-gold-300" />,
+              icon: <Megaphone className="h-5 w-5 text-gold-500" />,
               title: "Campaigns & ring groups",
               description: "Connect calls to campaigns and ring groups.",
             },
@@ -199,17 +199,17 @@ export default function FeaturePage({ params }) {
           description={data.description}
           features={[
             {
-              icon: <Contact className="h-5 w-5 text-gold-300" />,
+              icon: <Contact className="h-5 w-5 text-gold-500" />,
               title: "Google Contacts Sync",
               description: "Keep contacts up-to-date across CRM and Google.",
             },
             {
-              icon: <Calendar className="h-5 w-5 text-gold-300" />,
+              icon: <Calendar className="h-5 w-5 text-gold-500" />,
               title: "Google Calendar Sync",
               description: "Create and sync events directly from your CRM.",
             },
             {
-              icon: <Mail className="h-5 w-5 text-gold-300" />,
+              icon: <Mail className="h-5 w-5 text-gold-500" />,
               title: "Gmail Integration",
               description: "Track emails and log conversations automatically.",
             },
@@ -231,23 +231,24 @@ export default function FeaturePage({ params }) {
 
 function FeatureSection({ title, description, features, cta }) {
   return (
-    <section className="relative pt-28 pb-16 border-t border-border/60">
+    <section className="relative pt-28 pb-16 border-t border-light-border bg-gradient-to-b min-h-[80vh] from-white-bg via-light-bg to-light-gray">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(1000px_600px_at_50%_0%,rgba(200,162,74,0.06),transparent_70%)]" />
       <div className="container-max">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight animate-fade-up">{title}</h1>
-          <p className="mt-4 text-base md:text-lg text-muted-foreground animate-fade-up animate-delay-120">{description}</p>
+          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight animate-fade-up text-dark-text">{title}</h1>
+          <p className="mt-4 text-base md:text-lg text-dark-text-muted animate-fade-up animate-delay-120">{description}</p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
           {(features || []).map((f, idx) => (
-            <div key={idx} className="glass rounded-xl p-5 shadow-lg">
+            <div key={idx} className="bg-white-bg rounded-xl p-5 shadow-lg border border-light-border">
               <div className="flex items-center gap-3">
-                <div className="h-9 w-9 rounded-lg border border-border/60 flex items-center justify-center bg-white/5">
+                <div className="h-9 w-9 rounded-lg border border-light-border flex items-center justify-center bg-gold-50">
                   {f.icon}
                 </div>
-                <h3 className="text-base md:text-lg font-medium">{f.title}</h3>
+                <h3 className="text-base md:text-lg font-medium text-dark-text">{f.title}</h3>
               </div>
-              <p className="mt-3 text-sm text-muted-foreground">{f.description}</p>
+              <p className="mt-3 text-sm text-dark-text-muted">{f.description}</p>
             </div>
           ))}
         </div>

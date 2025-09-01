@@ -11,10 +11,20 @@
   --navy-600: #1b2e58;
   --navy-500: #233a6f;
 
+  --gold-600: #a8842b;
   --gold-500: #c8a24a;
   --gold-400: #d7b764;
   --gold-300: #e4ca86;
   --gold-200: #efddb0;
+  --gold-50: #fefdf8;
+
+  /* White/Light backgrounds for sections */
+  --white-bg: #ffffff;
+  --light-bg: #f8fafc;
+  --light-gray: #f1f5f9;
+  --light-border: #e2e8f0;
+  --dark-text: #1e293b;
+  --dark-text-muted: #64748b;
 
   --muted: #12203a;
   --muted-foreground: #aab3c7;
@@ -42,10 +52,19 @@
   --color-navy-600: var(--navy-600);
   --color-navy-500: var(--navy-500);
 
+  --color-gold-600: var(--gold-600);
   --color-gold-500: var(--gold-500);
   --color-gold-400: var(--gold-400);
   --color-gold-300: var(--gold-300);
   --color-gold-200: var(--gold-200);
+  --color-gold-50: var(--gold-50);
+
+  --color-white-bg: var(--white-bg);
+  --color-light-bg: var(--light-bg);
+  --color-light-gray: var(--light-gray);
+  --color-light-border: var(--light-border);
+  --color-dark-text: var(--dark-text);
+  --color-dark-text-muted: var(--dark-text-muted);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

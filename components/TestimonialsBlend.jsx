@@ -71,14 +71,16 @@ export default function TestimonialsBlend() {
 
   return (
     <section aria-labelledby="testimonials-heading" className={`relative ${inter.className}`}>
-      {/* blended background like features */}
+      {/* White background section alternating with features */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(900px_360px_at_75%_-10%,rgba(122,98,64,0.08),transparent_60%),radial-gradient(900px_360px_at_0%_100%,rgba(35,58,111,0.08),transparent_60%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0b0c10] via-[#0a0f1a] to-[#06070a]" />
+        {/* Clean white background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-light-gray via-white-bg to-light-bg" />
+        {/* Subtle gold accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(900px_360px_at_75%_-10%,rgba(200,162,74,0.06),transparent_70%)]" />
       </div>
 
       <div className="container-max py-12 md:py-16">
-        <h2 id="testimonials-heading" className="text-xl md:text-2xl font-semibold text-white/95">Customer Testimonials</h2>
+        <h2 id="testimonials-heading" className="text-xl md:text-2xl font-semibold text-dark-text">Customer Testimonials</h2>
 
         <div className="relative mt-8">
           <div
@@ -88,14 +90,14 @@ export default function TestimonialsBlend() {
             {testimonials.map((t) => (
               <blockquote
                 key={t.name}
-                className="snap-start shrink-0 basis-[92%] sm:basis-[48%] lg:basis-[32%] rounded-2xl border border-white/10 bg-black/30 p-6 text-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.25)] hover:-translate-y-1 transition-transform hover:shadow-[0_20px_60px_rgba(122,98,64,0.18)]"
+                className="snap-start shrink-0 basis-[92%] sm:basis-[48%] lg:basis-[32%] rounded-2xl border border-light-border bg-white-bg p-6 text-dark-text shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-transform hover:shadow-[0_20px_60px_rgba(200,162,74,0.25)]"
               >
-                <Quote className="h-5 w-5 text-[#8B7355]" />
-                <p className="mt-3 text-sm leading-relaxed">“{t.quote}”</p>
+                <Quote className="h-5 w-5 text-gold-500" />
+                <p className="mt-3 text-sm leading-relaxed text-dark-text-muted">"{t.quote}"</p>
                 <div className="mt-5 flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-[#0f1116] border border-[#8B7355]/40 grid place-items-center text-xs font-semibold">{t.initials}</div>
-                  <div className="text-xs text-gray-300">
-                    <div className="text-white/90 font-medium">{t.name}</div>
+                  <div className="h-10 w-10 rounded-full bg-gold-400/10 border border-gold-400/30 grid place-items-center text-xs font-semibold text-gold-600">{t.initials}</div>
+                  <div className="text-xs text-dark-text-muted">
+                    <div className="text-dark-text font-medium">{t.name}</div>
                     <div>{t.role}</div>
                   </div>
                 </div>
@@ -109,7 +111,7 @@ export default function TestimonialsBlend() {
               type="button"
               onClick={() => scroll(-1)}
               disabled={!canPrev}
-              className={`pointer-events-auto ml-[-28px] grid place-items-center h-9 w-9 rounded-full border border-[#8B7355]/40 bg-black/40 text-white/80 hover:border-[#8B7355] hover:text-[#8B7355] transition ${canPrev ? "opacity-100" : "opacity-40"}`}
+              className={`pointer-events-auto ml-[-28px] grid place-items-center h-9 w-9 rounded-full border border-light-border bg-white-bg text-dark-text hover:border-gold-400 hover:text-gold-500 hover:bg-gold-50 transition ${canPrev ? "opacity-100" : "opacity-40"}`}
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
@@ -117,7 +119,7 @@ export default function TestimonialsBlend() {
               type="button"
               onClick={() => scroll(1)}
               disabled={!canNext}
-              className={`pointer-events-auto mr-[-28px] grid place-items-center h-9 w-9 rounded-full border border-[#8B7355]/40 bg-black/40 text-white/80 hover:border-[#8B7355] hover:text-[#8B7355] transition ${canNext ? "opacity-100" : "opacity-40"}`}
+              className={`pointer-events-auto mr-[-28px] grid place-items-center h-9 w-9 rounded-full border border-light-border bg-white-bg text-dark-text hover:border-gold-400 hover:text-gold-500 hover:bg-gold-50 transition ${canNext ? "opacity-100" : "opacity-40"}`}
             >
               <ChevronRight className="h-4 w-4" />
             </button>
