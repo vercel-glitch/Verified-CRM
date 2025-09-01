@@ -1,4 +1,5 @@
 // All sections are implemented inline per request (no external components)
+import Image from 'next/image';
 
 export const metadata = {
   title: "About Us | Verified CRM",
@@ -71,7 +72,7 @@ function StorySection({ title, text }) {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-2 animate-fade-up" style={{ animationDelay: "120ms" }}>
             <div className="bg-light-gray rounded-2xl border border-light-border p-8 h-56 flex items-center justify-center">
-              <span className="text-dark-text-muted">We're Here to Help Your Business Grow</span>
+              <span className="text-dark-text-muted">We&apos;re Here to Help Your Business Grow</span>
             </div>
           </div>
           <div className="md:col-span-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
@@ -101,7 +102,7 @@ function TeamSection({ title, members }) {
               style={{ animationDelay: `${80 * (idx + 1)}ms` }}
             >
               <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border border-light-border">
-                <img src={m.imageUrl} alt={m.name} className="w-full h-full object-cover" />
+                <Image src={m.imageUrl} alt={m.name} width={80} height={80} className="w-full h-full object-cover" />
               </div>
               <div className="mt-4 text-center">
                 <div className="text-base font-semibold text-dark-text">{m.name}</div>

@@ -7,8 +7,8 @@ export default function Contact() {
       {/* Background gradients to match theme */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(1000px_600px_at_50%_0%,rgba(200,162,74,0.06),transparent_70%)]" />
       <div className="text-center py-9 max-w-3xl min-h-[40vh] flex flex-col items-center justify-center">
-        <h2 className="text-2xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-dark-text">Let's Talk Bullion Business</h2>
-        <p className="text-lg lg:text-xl text-dark-text-muted">Whether you're scaling your coin shop or managing global bullion trades, we'd love to hear from you.</p>
+        <h2 className="text-2xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-dark-text">Let&apos;s Talk Bullion Business</h2>
+        <p className="text-lg lg:text-xl text-dark-text-muted">Whether you&apos;re scaling your coin shop or managing global bullion trades, we&apos;d love to hear from you.</p>
       </div>
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 py-9">
         
