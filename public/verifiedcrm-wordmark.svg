@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="560" height="120" viewBox="0 0 560 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Verified CRM Wordmark</title>
+  <desc>Clean wordmark with subtle gold for "CRM" portion.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E4CA86"/>
+      <stop offset="50%" stop-color="#D7B764"/>
+      <stop offset="100%" stop-color="#C8A24A"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="120" fill="none"/>
+  <g transform="translate(8,18)">
+    <text x="0" y="56" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-weight="700" font-size="48" letter-spacing="0.2" fill="#0A0F1F">Verified</text>
+    <text x="188" y="56" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-weight="700" font-size="48" letter-spacing="0.2" fill="url(#gold)">CRM</text>
+  </g>
+</svg>
+

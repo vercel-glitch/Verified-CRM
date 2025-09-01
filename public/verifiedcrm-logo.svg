@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Verified CRM Logo</title>
+  <desc>Icon + wordmark for Verified CRM with luxury gold gradient on dark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E4CA86"/>
+      <stop offset="50%" stop-color="#D7B764"/>
+      <stop offset="100%" stop-color="#C8A24A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background safe area (transparent) -->
+  <rect width="640" height="160" fill="none"/>
+
+  <!-- Icon mark (same as mark, simplified) -->
+  <g transform="translate(16,16) scale(1)">
+    <path d="M64 6 L112 26 V64 C112 92 92 114 64 120 C36 114 16 92 16 64 V26 Z" fill="#0f1a33" fill-opacity="0.8" stroke="url(#gold)" stroke-width="3"/>
+    <path d="M32 44 L64 28 L96 44" stroke="#E7C56D" stroke-opacity="0.4" stroke-width="2"/>
+    <path d="M46 78 L59 92 L86 58" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(160,36)">
+    <text x="0" y="48" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-weight="700" font-size="44" letter-spacing="0.5" fill="#0A0F1F">Verified</text>
+    <text x="210" y="48" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-weight="700" font-size="44" letter-spacing="0.5" fill="url(#gold)">CRM</text>
+  </g>
+</svg>
+

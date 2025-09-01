@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Verified CRM Mark</title>
+  <desc>Shield with checkmark and mineral facets, luxury gold gradient on dark theme.</desc>
+  <defs>
+    <linearGradient id="gold" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E4CA86"/>
+      <stop offset="50%" stop-color="#D7B764"/>
+      <stop offset="100%" stop-color="#C8A24A"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="16" y1="16" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EFDDB0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D7B764" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="blur"/>
+    </filter>
+  </defs>
+
+  <!-- Shield base -->
+  <path d="M32 5 L56 15 V32 C56 46 46 57 32 60 C18 57 8 46 8 32 V15 Z"
+        fill="#0f1a33" fill-opacity="0.8" stroke="url(#gold)" stroke-width="2"/>
+
+  <!-- Mineral facets (subtle) -->
+  <path d="M16 22 L32 14 L48 22 L40 36 L24 36 Z" fill="url(#goldSoft)" opacity="0.25"/>
+  <path d="M16 22 L32 14 L48 22" stroke="#E7C56D" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M24 36 L32 22 L40 36" stroke="#E7C56D" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- Checkmark -->
+  <path d="M22 34 L29 41 L44 26" stroke="url(#gold)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Soft glow around checkmark for premium feel -->
+  <g filter="url(#softGlow)">
+    <path d="M22 34 L29 41 L44 26" stroke="#E7C56D" stroke-opacity="0.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+
