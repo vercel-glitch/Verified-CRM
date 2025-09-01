@@ -70,7 +70,7 @@ const authLinks = [
 
 function MenuItem({ href, label, onClick, icon }) {
   return (
-    <Link href={href} onClick={onClick} className="px-3 py-2 rounded-md hover:bg-black/5 text-black flex items-center gap-2">
+    <Link href={href} onClick={onClick} className="px-3 py-2 rounded-md hover:bg-black/5 hover:!text-white flex items-center gap-2" style={{ color: '#052A41' }}>
       {icon ? <span className="shrink-0">{icon}</span> : null}
       <span>{label}</span>
     </Link>
@@ -91,13 +91,13 @@ function Dropdown({ label, children }) {
   return (
     <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger asChild>
-        <button className="px-3 py-2 rounded-md hover:bg-muted/50 inline-flex items-center gap-1" aria-expanded={open}>
+        <button className="px-3 py-2 rounded-md hover:bg-muted/50 hover:!text-white inline-flex items-center gap-1" aria-expanded={open} style={{ color: '#052A41' }}>
           {label}
           <ChevronDown className={`h-4 w-4 transition-transform ${open ? "rotate-180" : "rotate-0"}`} />
         </button>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content sideOffset={8} align="start" className="z-50 border border-black/10 rounded-xl p-0 bg-white text-black shadow-xl">
+        <DropdownMenu.Content sideOffset={8} align="start" className="z-50 border border-black/10 rounded-xl p-0 bg-white shadow-xl" style={{ color: '#052A41' }}>
           <AnimatePresence>
             {open ? (
               <motion.div
@@ -158,13 +158,12 @@ function getIcon(label) {
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border/60">
+    <div className="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-border/60">
       <div className="container-max flex items-center justify-between h-16">
         <div className="flex items-center gap-2">
           <Link href="/" className="inline-flex items-center gap-2">
             {/* <Image src="/verifiedcrm-mark.svg" alt="Verified CRM" width={36} height={36} priority /> */}
-            <Image src="/verifiedcrm-logo-light.svg" alt="Verified CRM filtered-gold" width={250} height={44} priority className="relative top-[2px] border " />
-            <span className="sr-only text-white">Verified CRM</span>
+            <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={250} height={44} priority className="relative top-[2px] border " />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-1">
@@ -176,7 +175,7 @@ export default function Navbar() {
                 ))}
               </Dropdown>
             ) : (
-              <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md hover:bg-muted/50 inline-flex items-center gap-2">
+              <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md hover:bg-muted/50 hover:!text-white inline-flex items-center gap-2" style={{ color: '#052A41' }}>
                 {item.label === "Home" ? <HomeIcon className="h-4 w-4 text-gold-300" /> : null}
                 {item.label === "Pricing" ? <Tag className="h-4 w-4 text-gold-300" /> : null}
                 {item.label === "About Us" ? <Info className="h-4 w-4 text-gold-300" /> : null}
@@ -187,7 +186,7 @@ export default function Navbar() {
         </nav>
         <div className="hidden md:flex items-center gap-2">
           {authLinks.map((a) => (
-            <Link key={a.label} href={a.href} className={`btn-base ${a.variant === 'primary' ? 'btn-primary' : 'btn-outline'} px-4 py-2 text-sm inline-flex items-center gap-2`}>
+            <Link key={a.label} href={a.href} className={`btn-base ${a.variant === 'primary' ? 'btn-primary' : 'btn-outline'} px-4 py-2 text-sm inline-flex items-center gap-2`} style={a.label === "Login" ? { color: '#052A41' } : {}}>
               {a.label === "Login" ? <LogIn className="h-4 w-4" /> : <UserPlus className="h-4 w-4" />}
               {a.label}
             </Link>
@@ -195,7 +194,7 @@ export default function Navbar() {
         </div>
         <Dialog.Root open={mobileOpen} onOpenChange={setMobileOpen}>
           <Dialog.Trigger asChild>
-            <button className="md:hidden px-3 py-2 rounded-md hover:bg-muted/50 inline-flex items-center gap-2">
+            <button className="md:hidden px-3 py-2 rounded-md hover:bg-muted/50 inline-flex items-center gap-2" style={{ color: '#052A41' }}>
               <MenuIcon className="h-5 w-5" />
               Menu
             </button>
@@ -219,15 +218,15 @@ export default function Navbar() {
                       animate={{ x: 0 }}
                       exit={{ x: 320 }}
                       transition={{ duration: 0.2, ease: "easeOut" }}
-                      className="fixed right-0 top-0 h-full w-80 glass border-l border-border/60 p-4 overflow-y-auto"
+                      className="fixed right-0 top-0 h-full w-80 bg-white z-50 border-l border-border/60 p-4 overflow-y-auto"
                     >
-                                {/* logo */}
+                      {/* logo */}
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <Image src="/verifiedcrm-mark.svg" alt="Verified CRM" width={32} height={32} />
-                          <Image src="/verifiedcrm-wordmark.svg" alt="Verified CRM" width={160} height={40} className="relative top-[2px]" />
+                          <Image src="/verifiedcrm.png" alt="Verified CRM filtered-gold" width={200} height={44} priority className="relative top-[2px] border " />
+
                         </div>
-                        <button onClick={() => setMobileOpen(false)} className="px-2 py-1 hover:bg-muted/50 rounded-md">
+                        <button onClick={() => setMobileOpen(false)} className="px-2 py-1 hover:bg-muted/50 rounded-md" style={{ color: '#052A41' }}>
                           <X className="h-5 w-5" />
                         </button>
                       </div>
@@ -235,7 +234,7 @@ export default function Navbar() {
                         {navbarConfig.map((item) => (
                           item.items ? (
                             <details key={item.label} className="group">
-                              <summary className="px-3 py-2 rounded-md hover:bg-muted/50 cursor-pointer inline-flex items-center gap-2">
+                              <summary className="px-3 py-2 rounded-md hover:bg-muted/50 hover:!text-white cursor-pointer inline-flex items-center gap-2" style={{ color: '#052A41' }}>
                                 {item.label}
                               </summary>
                               <div className="pl-3 py-1 grid">
@@ -245,7 +244,7 @@ export default function Navbar() {
                               </div>
                             </details>
                           ) : (
-                            <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md hover:bg-muted/50 inline-flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+                            <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md hover:bg-muted/50 hover:!text-white inline-flex items-center gap-2" onClick={() => setMobileOpen(false)} style={{ color: '#052A41' }}>
                               {item.label === "Home" ? <HomeIcon className="h-4 w-4 text-gold-300" /> : null}
                               {item.label === "Pricing" ? <Tag className="h-4 w-4 text-gold-300" /> : null}
                               {item.label === "About Us" ? <Info className="h-4 w-4 text-gold-300" /> : null}
@@ -255,7 +254,7 @@ export default function Navbar() {
                         ))}
                         <div className="grid grid-cols-2 gap-2 pt-2">
                           {authLinks.map((a) => (
-                            <Link key={a.label} href={a.href} className={`btn-base ${a.variant === 'primary' ? 'btn-primary' : 'btn-outline'} px-4 py-2 text-sm text-center inline-flex items-center justify-center gap-2`} onClick={() => setMobileOpen(false)}>
+                            <Link key={a.label} href={a.href} className={`btn-base ${a.variant === 'primary' ? 'btn-primary' : 'btn-outline'} px-4 py-2 text-sm text-center inline-flex items-center justify-center gap-2`} onClick={() => setMobileOpen(false)} style={a.label === "Login" ? { color: '#052A41' } : {}}>
                               {a.label === "Login" ? <LogIn className="h-4 w-4" /> : <UserPlus className="h-4 w-4" />}
                               {a.label}
                             </Link>
