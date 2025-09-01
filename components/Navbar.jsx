@@ -44,23 +44,23 @@ const navbarConfig = [
   },
   { label: "Pricing", href: "/pricing" },
   { label: "About Us", href: "/about" },
-  {
-    label: "Resources",
-    items: [
-      { label: "Blog", href: "/blog" },
-      { label: "FAQs", href: "/faqs" },
-      { label: "Case Studies", href: "/case-studies" },
-      { label: "Request a Demo", href: "/demo" },
-    ],
-  },
-  {
-    label: "Support",
-    items: [
-      { label: "Contact Us", href: "/contact" },
-      { label: "Live Chat", href: "/live-chat" },
-      { label: "Customer Support", href: "/customer-support" },
-    ],
-  },
+  // {
+  //   label: "Resources",
+  //   items: [
+  //     { label: "Blog", href: "/blog" },
+  //     { label: "FAQs", href: "/faqs" },
+  //     { label: "Case Studies", href: "/case-studies" },
+  //     { label: "Request a Demo", href: "/demo" },
+  //   ],
+  // },
+  // {
+  //   label: "Support",
+  //   items: [
+  //     { label: "Contact Us", href: "/contact" },
+  //     { label: "Live Chat", href: "/live-chat" },
+  //     { label: "Customer Support", href: "/customer-support" },
+  //   ],
+  // },
 ];
 
 const authLinks = [
@@ -162,9 +162,9 @@ export default function Navbar() {
       <div className="container-max flex items-center justify-between h-16">
         <div className="flex items-center gap-2">
           <Link href="/" className="inline-flex items-center gap-2">
-            <Image src="/verifiedcrm-mark.svg" alt="Verified CRM" width={36} height={36} priority />
-            <Image src="/verifiedcrm-wordmark.svg" alt="Verified CRM" width={180} height={44} priority className="relative top-[2px]" />
-            <span className="sr-only">Verified CRM</span>
+            {/* <Image src="/verifiedcrm-mark.svg" alt="Verified CRM" width={36} height={36} priority /> */}
+            <Image src="/verifiedcrm-logo-light.svg" alt="Verified CRM filtered-gold" width={250} height={44} priority className="relative top-[2px] border " />
+            <span className="sr-only text-white">Verified CRM</span>
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-1">

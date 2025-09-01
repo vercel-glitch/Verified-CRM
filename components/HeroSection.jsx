@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400","600","700","800","900"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700", "800", "900"] });
 
 export default function HeroSection() {
   return (
@@ -12,21 +12,20 @@ export default function HeroSection() {
         <div className="relative z-10 flex items-center justify-center md:justify-start px-6 md:px-12">
           <div className={`max-w-2xl text-white md:ml-4 lg:ml-6 ${inter.className}`}>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-              The CRM Built for the Gold & Mineral Industry
+              Power Your Bullion Business with <span className="text-gold-300">Smart CRM</span>
             </h1>
             <p className="mt-5 text-base md:text-lg text-white/85 max-w-xl font-medium">
-              Verified CRM helps businesses in the precious metal sector manage leads, deals, inventory,
-              and customer relationships effortlessly.
+              All-in-one bullion CRM with customer management, real-time pricing, workflow automation, and inventory control.
             </p>
             <div className="mt-6 flex items-center gap-4">
               <a
-                href="#"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg text-white px-6 py-3 font-semibold shadow-sm border border-white/10 bg-[linear-gradient(#7A6240)] hover:brightness-110 transition"
               >
                 Start Free Trial
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-lg bg-[#0d0f14] text-white px-6 py-3 font-medium shadow-sm border border-white/35 hover:bg-[#151922] hover:border-white/60 transition"
               >
                 Book a Demo
@@ -50,20 +49,20 @@ export default function HeroSection() {
         </div>
       </div>
 
-    {/* Supplemental image preview inside hero background */}
-<div className="container-max py-6">
-  <div className="mx-auto max-w-5xl md:max-w-6xl rounded-2xl overflow-hidden border border-white/10 bg-black p-2">
-    <Image 
-      src="/image.png" 
-      alt="Verified CRM" 
-      width={1600} 
-      height={900} 
-      className="block w-full h-auto object-cover rounded-xl" 
-    />
-  </div>
-</div>
+      {/* Supplemental image preview inside hero background */}
+      <div className="container-max py-6">
+        <div className="mx-auto max-w-5xl md:max-w-6xl rounded-2xl overflow-hidden border border-white/10 bg-black p-2">
+          <Image
+            src="/image.png"
+            alt="Verified CRM"
+            width={1600}
+            height={900}
+            className="block w-full h-auto object-cover rounded-xl"
+          />
+        </div>
+      </div>
 
     </section>
-    
+
   );
 }

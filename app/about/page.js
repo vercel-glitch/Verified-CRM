@@ -70,7 +70,7 @@ function StorySection({ title, text }) {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-2 animate-fade-up" style={{ animationDelay: "120ms" }}>
             <div className="glass rounded-2xl border border-border p-8 h-56 flex items-center justify-center">
-              <span className="text-muted-foreground">[Illustration Placeholder]</span>
+              <span className="text-muted-foreground">We’re Here to Help Your Business Grow</span>
             </div>
           </div>
           <div className="md:col-span-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
